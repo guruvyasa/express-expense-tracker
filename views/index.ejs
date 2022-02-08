@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="purpose" placeholder="purpose">
+        <input type="date" name="tdate" placeholder="transaction date">
+        <button>Submit</button>
+
+    </form>
+    <% for(let i=0; i<expenses.length; i++){ %>
+
+    <h1><%= expenses[i].purpose %></h1>
+<% } %>
+
+</body>
+</html>

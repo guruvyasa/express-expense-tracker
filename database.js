@@ -47,10 +47,11 @@ export async function getExpenses(){
     try {
         const db = await getConnection()
         const expenses = await db.all(query)
-        console.log(expenses)
+        return expenses
         
     } catch (error) {
         console.error(error)   
+        return []
     }
 
 }
